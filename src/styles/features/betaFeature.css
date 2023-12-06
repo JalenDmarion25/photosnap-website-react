@@ -1,0 +1,116 @@
+.beta-feature-container{
+    display: flex;
+    justify-content: space-between;
+    height: 280px;
+    width: 100%;
+    background-image: url('../../assets/shared/desktop/bg-beta.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.beta-feature-container h1{
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+    font-weight: 600;
+    margin: auto 0 auto 0;
+    width: 50%;
+    padding: 0px 230px 0 210px;
+}
+
+.beta-feature-container a{
+    background: transparent;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    margin: auto 150px auto 0;
+    align-items: center;
+}
+
+
+.beta-feature-container a span{
+    color: white;
+    align-items: center;
+    display: inline-block;
+    position: relative;
+
+}
+
+.beta-feature-container a span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0.25px;
+    background-color: rgb(255, 255, 255);
+    transition: width 0.25s ease-out;
+}
+
+.beta-feature-container a span:hover:before{
+    width: 100%;
+
+}
+
+
+
+@media screen and (max-width: 1280px) {
+
+    .beta-feature-container h1 {
+        font-size: 2.5rem;
+        line-height: 2.8rem;
+        font-weight: 600;
+        margin: auto 0 auto 0;
+        width: 50%;
+        padding: 0px 50px 0 50px;
+    }
+
+
+    .beta-feature-container a{
+        background: transparent;
+        border: 0;
+        color: white;
+        cursor: pointer;
+        margin: auto 50px auto 0;
+    }
+    
+
+}
+
+
+@media screen and (max-width: 750px) {
+
+    .beta-feature-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 280px;
+        width: 100%;
+        background-image: url('../../assets/shared/desktop/bg-beta.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+
+    .beta-feature-container h1 {
+        font-size: 2.5rem;
+        line-height: 2.8rem;
+        font-weight: 600;
+        margin: 0 0% 15px 0%;
+        width: 90%;
+        padding: 0px 0px 0px 30px;
+    }
+
+
+    .beta-feature-container a{
+        background: transparent;
+        border: 0;
+        color: white;
+        cursor: pointer;
+        margin: 0 0px 0 0;
+        width: 90%;
+        text-align: left;
+        padding: 0px 0px 0px 30px;
+    }
+    
+
+}

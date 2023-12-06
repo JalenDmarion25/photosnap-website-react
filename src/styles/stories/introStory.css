@@ -1,0 +1,135 @@
+.intro-Story{
+    width: 100%;
+    height: 650px;
+    background-image: url('../../assets/stories/desktop/moon-of-appalacia.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mobile-story-bg{
+    display: none;
+}
+
+.intro-story-infor{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+    padding: 0 45px 0 0px;
+    margin: 0 0 0 60px;
+    
+}
+
+.intro-story-infor h1{
+   color: white;
+   font-weight: 500;
+   font-size: 2.6rem;
+   letter-spacing: 0.5rem;
+   margin-top: 20px;
+}
+
+.intro-story-infor h5{
+    color: white;
+    letter-spacing: 0.1rem;
+
+ }
+
+.intro-story-infor span{
+    margin-top: 25px;
+
+}
+
+.intro-story-infor a span{
+    color: white;
+    align-items: center;
+    display: inline-block;
+    position: relative;
+}
+
+.intro-story-infor a span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0.25px;
+    background-color: rgb(255, 255, 255);
+    transition: width 0.25s ease-out;
+}
+
+.intro-story-infor a span:hover:before{
+    width: 100%;
+
+}
+
+.intro-story-infor p{
+    margin: 25px 0 25px 0;
+    color: white;
+    font-size: 0.7rem;
+    line-height: 1.5rem;
+    padding: 0px 80px 0px 0px;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+
+    
+
+    .intro-Story{
+        width: 100%;
+        height: 650px;
+        background-image: url('../../assets/stories/tablet/moon-of-appalacia.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .intro-story-infor {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        height: 100%;
+        justify-content: center;
+        padding: 0 45px 0 0px;
+        margin: 0 0 0 60px;
+    }
+
+    .intro-story-infor p{
+        margin: 25px 0 25px 0;
+        color: white;
+        font-size: 0.7rem;
+        line-height: 1.5rem;
+        padding: 0px 0px 0px 0px;
+    }
+    
+}
+
+/* @media screen and (min-width: 741px) {
+
+    
+    .intro-Story{
+        background-image: url('../../assets/stories/desktop/moon-of-appalacia.jpg');
+    }
+} */
+
+
+
+
+@media screen and (max-width: 740px) {
+    .mobile-story-bg{
+        display: block;
+        
+    }
+
+    .mobile-story-bg img{
+        width: 100%;
+        
+    }
+    .intro-Story{
+        background-image: none;
+        background-color: black;
+        height: fit-content;
+    }
+}
+

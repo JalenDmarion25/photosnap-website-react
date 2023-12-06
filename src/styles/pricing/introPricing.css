@@ -1,0 +1,119 @@
+.intro-pricing{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.intro-pricing-desk-img{
+    display: block;
+}
+
+.intro-pricing-tablet-img,
+.intro-pricing-mobile-img{
+    display: none;
+}
+
+
+.intro-pricing-content-one { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    grid-area: 1 / 1 / 2 / 2; 
+    height: 500px;
+}
+
+.intro-pricing-content-one h1{ 
+    color: white;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+    padding: 0px 0px 0px 80px;
+}
+
+.intro-pricing-content-one p{
+    color: white;
+    font-size: 0.6rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.2rem;
+    padding: 0px 90px 0px 80px;
+}
+.intro-pricing-content-two {
+     grid-area: 1 / 2 / 2 / 4; 
+     height: 500px;
+    }
+
+.intro-pricing-content-two img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1120px) {
+    .intro-pricing{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .intro-pricing-content-one { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: black;
+        grid-area: 1 / 1 / 2 / 2; 
+        height: 500px;
+    }
+
+
+    .intro-pricing-desk-img{
+        display: none;
+    }
+
+    .intro-pricing-tablet-img{
+        display: block;
+    }
+
+    .intro-pricing-content-two {
+        grid-area: 1 / 2 / 2 / 3; 
+        height: 500px;
+       }
+}
+
+@media screen and (max-width: 734px) {
+    .intro-pricing{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 1000px;
+    }
+
+    .intro-pricing-content-one { 
+        grid-area: 2 / 1 / 3 / 2;
+        
+    }
+
+
+    .intro-pricing-desk-img{
+        display: none;
+    }
+
+    .intro-pricing-tablet-img{
+        display: none;
+    }
+
+    .intro-pricing-mobile-img{
+        display: block;
+    }
+
+    .intro-pricing-content-two {
+        grid-area: 1 / 1 / 2 / 2;
+       }
+}
